@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap');
+body{
+  background-color: black;
+  color:white;
+}
+.head{
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Stick No Bills';
+  letter-spacing: 4px;
+}
+.grid {
+  border: 1px solid;
+  height: 374px;
+  width: 434px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 60px;
+  width: 60px;
+  border: 1px solid;
+}
+
+.hid{
+ display:none;
+}
+
+.player-one {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  border-radius:50%;
+}
+
+.player-two {
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+  border-radius: 50%;
+}
