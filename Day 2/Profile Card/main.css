@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Dosis",sans-serif;
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    background-size: cover; 
+      
+}
+
+
+.clear {
+    clear: both;
+}
+.author {
+    color:blue;
+  }
+    
+.cards-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-one {
+    position: relative;
+    width: 300px;
+    background: #ffeef5;
+    box-shadow: 0 10px 7px -5px;
+    rgba(0,0,0,0.4);
+}
+
+.card-one header {
+    position: relative;
+    width: 100%;
+    height:  60px;
+    background-color: #c8c;
+}
+
+.card-one header::before, .card-one header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+} 
+
+.card-one header::before {
+    transform: skewY(-8deg);
+    transform-origin: 100% 100%;
+}
+
+.card-one header::after {
+    transform: skewY(-8deg);
+    transform-origin: 0 100%;
+}
+
+.card-one header .avatar {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -50px;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ccc;
+    border: 3px solid #fff;
+}
+
+.card-one header .avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: auto;
+}
+
+.card-one h3 {
+    position: relative;
+    margin: :80px 0 30px;
+    text-align: center;
+}
+
+.card-one h3::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 1px;
+    background: #000;
+   
+}
+
+.card-one .desc {
+    padding: 0 1rem 2rem;
+    text-align: center;
+    line-height: 1.5;
+    color:black;
+}
+
+.card-one .contacts {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto 3rem;
+}
+
+.card-one .contacts a {
+    display: block;
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+    color: #c8c;    
+}
+
+.card-one .contacts a:hover {
+    color: #333;
+}
+.card-one .contacts a:hover .fa::before {
+    color: #f77;
+}
+.card-one .contacts a:hover .fa::after {
+    width: 100%;
+    height: 100%;
+}
+
+.card-one .contacts a:last-of-type .fa {
+    line-height: 36px;
+}
+
+.card-one footer {
+    position: relative;
+    padding: 1rem;
+    background-color: #6573d0;
+    text-align: center;
+}
+
+.card-one footer a {
+   padding: 0 1rem;
+   color: #e2e2e2;
+   transition: color 0.4s;
+}
+
+.card-one footer a:hover {
+    color: #c8c;
+}
+
+.card-one footer::before {
+    content: "";
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom-color: #6573d0;
+}
