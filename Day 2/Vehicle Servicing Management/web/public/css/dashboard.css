@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+.db-body{
+    /* background-image: linear-gradient(blue,pink); */
+    background-color: #000000;
+    /* background-image: linear-gradient(15deg,white 0%,rgb(12, 12, 12) 100%); */
+    /* background-color: rgb(196, 218, 238); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(243, 239, 239);
+    font-family: 'Montserrat' !important;
+}
+.sections{
+    display:flex;
+    justify-content: space-evenly;
+}
+.section1{
+    width: 45%;
+    height: auto;
+    /* background-image: linear-gradient(rgb(235, 231, 231),white); */
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.section2:hover{
+    transform:scale(1.03);
+}
+
+.wlcome{
+    font-size: 7rem;
+    color: white;
+    position:center;
+    margin:7rem 1rem 0 0rem ;
+}
+.wlcm-hand{
+    width: 3rem;
+    height: 3rem;
+}
+.buttons{
+    margin:5rem 0 2.5rem 0rem;
+}
+.vehicleBtn{
+    padding: 1rem;
+}
+
+.vehicleBtn:hover, .appointmentBtn:hover, .feedbackBtn:hover{
+    transform: scale(1.02);
+}
+
+.appointmentBtn{
+    padding: 1rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+.feedbackBtn{
+    padding: 1rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+.user_image_d{
+    margin:2rem;
+    margin-top:4rem;
+}
+.user-image{
+  border-radius: 50%;
+}
+
+.name_of_user{
+    font-size: 3rem;
+    margin:0.5rem 0 0 0;
+    font-weight: bold;
+}
+.phone-call-img{
+    height: 2rem;
+    width: 2rem;
+    margin: 2rem 1rem 0 1rem;
+    color: white;
+}
+
+.phone-number{
+    font-size: 2rem;
+    /* color: rgb(15, 15, 15); */
+    font-weight: bold;
+    margin: 1.2rem 0 0 0;
+}
+
