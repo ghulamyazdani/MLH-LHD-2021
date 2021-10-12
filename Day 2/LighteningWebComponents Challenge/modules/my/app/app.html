@@ -1,0 +1,17 @@
+<template>
+    <header>
+      <img src="resources/lwc.png" alt="App logo">
+      <h2>Lightning Conference</h2>
+    </header>
+    <main class="content">
+      <!-- Add components here -->
+      <template if:true={isStateList}>
+        <my-session-list onnavigate={handleNavigate}>
+        </my-session-list>
+      </template>
+<template if:true={isStateDetails}>
+    <my-session-details onnavigate={handleNavigate} session-id={sessionId}>
+    </my-session-details>
+      </template>
+</main>
+</template>
