@@ -1,0 +1,67 @@
+.grid {
+  display: grid;
+  grid-template-columns: 200px 500px 200px;
+  &__add {
+    justify-self: center;
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+  &__subtract {
+    justify-self: center;
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+  &__main {
+    justify-self: center;
+    display: grid;
+    &-counter {
+      justify-self: center;
+      align-self: center;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      font-size: 14rem;
+    }
+    &-glass {
+      width: 350px;
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    &__add {
+      grid-column-start: 3;
+      width: 60px;
+      height: 60px;
+    }
+    &__subtract {
+      width: 60px;
+      height: 60px;
+    }
+    &__main {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      &-counter {
+        font-size: 7rem;
+      }
+      &-glass {
+        width: 150px;
+      }
+    }
+  }
+}
